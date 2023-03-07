@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xtsx
+  namespace: samburrai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:69c4b2a5173278a72565cfbd6c9208646195b3da46f24bf497d08c51fa36b8a7
+        name: my-nodejs
+        resources: {}
+status: {}
