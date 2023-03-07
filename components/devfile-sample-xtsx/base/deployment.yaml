@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-xtsx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:E1KJk-devfile-sample-xtsx
+      - image: quay.io/redhat-appstudio/user-workload@sha256:69c4b2a5173278a72565cfbd6c9208646195b3da46f24bf497d08c51fa36b8a7
         name: my-nodejs
         ports:
         - containerPort: 3001
